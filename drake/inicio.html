@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Inicio </title>
+    <link type="text/css" rel="stylesheet" href="css/estilo.css"/>
+</head>
+<body>
+<h1> Soy Drake </h1>
+<p> Esta es mi página web. Haz clic en los siguientes enlaces para visitar las siguientes secciones: </p>
+<nav>
+<ul>
+    <li><a class="seleccionado">Inicio</a></li>
+	<li><a href="yo.html">Yo</a></li>
+    <li><a href="canciones.html">Canciones</a></li>
+    <li><a href="conciertos.html">Conciertos</a></li>
+	<li><a href="organizar un concierto.html">Organizar un concierto</a></li>
+</ul>	
+</nav>
+<p>
+   <img id="mostrar-imagen" onclick="cambiarImagen()" src="imagenes/imagen1.jpg" width="180" height="180"/>
+   </p>
+   <p>¡Haz clic para cambiar imagen!</p>
+   <script>
+      function cambiarImagen(){
+	    var imagenMostrada = document.getElementById("mostrar-imagen");
+		if (imagenMostrada.src.match("imagenes/imagen1.jpg")){
+               imagenMostrada.src = "imagenes/imagen2.jpg";
+		}
+		 else {
+			  imagenmostrada.src = "imagenes/imagen1.jpg";
+		}
+	}	
+    </script>	
+</body>
+</html>
